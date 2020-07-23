@@ -1,0 +1,75 @@
+//Primera clase en java
+public class HolaMundo {
+
+    public static void main(String args[]) {
+
+        //tipos primitivos enteros
+        /*
+        TIPOS PRIMITIVOS EN JAVA:
+            Tipos enteros
+                byte    1 byte
+                short   2 bytes
+                char    2 bytes
+                int     4 bytes
+                long    8 bytes
+                boolean ??????
+        
+            Tipos Flotantes
+                float   4 bytes
+                double  8 bytes
+        */
+        
+        byte numByte = 10;
+        System.out.println("Valor minimo: " + Byte.MIN_VALUE);
+        System.out.println("Valor maximo: " + Byte.MAX_VALUE);
+        
+        short numShort = 10;
+        System.out.println("Valor minimo: " + Short.MIN_VALUE);
+        System.out.println("Valor maximo: " + Short.MAX_VALUE);
+        
+        int numInt = 50;
+        System.out.println("Valor Minimo: " + Integer.MIN_VALUE);
+        System.out.println("Valor Maximo: " + Integer.MAX_VALUE);
+        
+        float numFloat = 10.0F;     
+        /*
+        Notar que al invocar al float 10.0, hay que ponerle la "literal" ("F")
+        luego del número porque en estado "natural" se considera un double, y
+        sin la F estariamos asignandole un double a un tipo Float, lo cual por
+        definicion es incorrecto.
+        Otra forma de solucionarlo es poniendo el convertidor (float) antes del 
+        número.
+        */
+        System.out.println("Valor Minimo: " + Float.MIN_VALUE);
+        System.out.println("Valor Maximo: " + Float.MAX_VALUE);
+        /*
+        Cuando sale por pantalla vemos algo como 989398379837E, donde la "E"
+        significa que el siguiente número que aparezca es un exponente.
+        Esta es la forma que JAVA tiene de representar un valor exponencial.
+        No solamente es válido en su salida por pantalla, sino que también nosotros
+        podemos, al escribir el número, ponerle una "E" para indicar un número
+        exponencial. 
+        */
+       
+        
+        //Y asi sucesivamente con cada tipo de dato primitivo...
+        //Tambien esta el método SIZE que es el sizeof() de C, pero expresado en BITS, NO en Bytes.
+        
+        //VALORES LITERALES
+        /*
+        Cuando tenemos un número muy grande que queremos expresarlo en forma de Long, 
+        tenemos que ponerle una "L" al final. Por ejemplo:
+        */
+        int num = (int)298487299  //El modificador no puede convertir tal número porque es muy grande
+                
+        int num = (int)298487299L //Ahora sí podría porque no convierte de int a int, sino de Long a int.
+                
+        //Los valores literales también existen en otros tipos de datos, por ejemplo, 
+        /*
+        LETRA / SIGNIFICADO
+        L       Long
+        D       Double
+        F       Float
+        */
+    }
+}
