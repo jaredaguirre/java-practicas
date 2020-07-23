@@ -1,0 +1,9 @@
+//Creamos el objeto consola
+Scanner cons = new Scanner(System.in);
+        
+//Creamos las variables y les asignamos un valor.
+String titulo = cons.nextLine();
+String autor = cons.nextLine();
+        
+//Imprimimos el resultado
+System.out.println(titulo + " fue escrito por " + autor);
