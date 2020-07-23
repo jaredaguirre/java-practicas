@@ -1,0 +1,46 @@
+//Primera clase en java
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        
+        /*
+        Unicode es una forma universal de mencionar a los caracteres de 
+        varias lenguas. Java permite invocar un caracter atraves de su valor en 
+        unicode.
+        */
+        
+        char x = '!';   //Se crea normalmente
+        char b = '\u0021'; //Se crea con unicode, en este caso, el signo de admiracion
+        char c = 33;    //Se crea con ASCII, el cual ya sabemos desde C
+                
+        System.out.println(x);
+        System.out.println(b);
+        System.out.println(c);
+        
+        /*
+        Si reemplazamos todos los tipos de datos por "var", va a estar funcionando
+        bien excepto para el ultimo caso, donde debemos hacer que pase del valor natural
+        o literal, al tipo char, ya que de lo contrario, va a pensar que es un
+        int:
+        
+        var c = (char)33;
+        
+        
+        */
+        
+        //******************TIPOS BOOLEANOS**********************************
+        
+        //Nada raro, esto ya lo sabia
+        boolean estado = true;
+        System.out.println(estado);
+        
+        estado = false;
+        System.out.println(estado);
+        
+        if(estado)
+            System.out.println("Es Buenardo");
+        else
+            System.out.println("No es Buenardo");
+        
+    }
+}
