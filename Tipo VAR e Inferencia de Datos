@@ -1,0 +1,26 @@
+//Primera clase en java
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        /*
+        Para entender el principio del siguiente punto, se necesita usar la
+        ventana "variables" del debugger, para ver cómo Java ve realmente 
+        estos datos:
+        */
+        
+        //El tipo de Dato VAR siempre va a detectar el tipo natural del dato:
+        
+        var numInt = 10;            //Tipo INT    
+        var numDouble = 10.2;       //Tipo DOUBLE
+        var numFloat = 10.3F;       //TIPO Float
+        
+        /*
+        Recordar que var detecta el DOUBLE de ese número porque cualquier núm
+        con decimal en estado natural, es considerado DOUBLE.
+        
+        En cambio, cuando queremos que VAR detecte un FLOAT, Hay que ponerle
+        la literal de Float, como lo es la "F" al final.
+        */
+
+    }
+}
